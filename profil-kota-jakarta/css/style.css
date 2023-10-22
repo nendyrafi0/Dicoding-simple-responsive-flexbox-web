@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+*::selection {
+    background-color: grey;
+    color: black;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* style */
+    font-family: 'montserrat', sans-serif;
+    background-color: black;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/* Bagian Header */
+header .navbar-container {
+    width: 100%;
+    padding: 1rem;
+    /* flex */
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+}
+/* logo */
+header .navbar-container .nav-logo img {
+    max-width: 150px;
+}
+/* navigation list */
+header .navbar-container .nav-list ul {
+    display: flex;
+    gap: 2rem 1rem;
+    padding: 0px;
+    list-style: none;
+}
+header .navbar-container .nav-list li {
+    transition: 1s;
+}
+header .navbar-container .nav-list li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 18px;
+    /* color */
+    color: #ee3c27;
+    /* effect */
+    transition: .5s;
+}
+header .navbar-container .nav-list li:hover {
+    transform: scale(0.95);
+}
+header .navbar-container .nav-list li a:hover {
+    color: black;
+    background-color: #ee3c27;
+}
+/* akhir bagian Header */
+
+/* Bagian Main */
+main .display-img img {
+    width: 100%;
+    border-block: 5px solid #ee3c27;
+}
+
+/* container utama */
+main .container {
+    display: flex;
+    gap: 1.5rem;
+    margin: 20px;
+}
+main .container .card {
+    background-color: #ee3c27;
+    color: black;
+    padding-block: 15px;
+    padding-inline: 30px;
+    border: 5px solid #fa6b1e;
+    border-bottom: 10px solid #fa6b1e;
+    border-radius: 15px;
+}
+
+/* artikel */
+main .container #content {
+    display: flex;
+    flex: 5;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: justify;
+}
+main .container #content .card img {
+    width: 99%;
+    border: 3px solid #fa6b1e;
+    border-radius: 10px;
+}
+main .container #content .card figcaption {
+    font-size: 0.3rem;
+}
+
+/* aside */
+main .container aside .card {
+    flex: 1;
+    align-items: center;
+    text-align: center;
+}
+main .container aside .card p {
+    margin-top: -10px;
+}
+main .container aside .card figure img {
+    max-width: 150px;
+}
+main .container aside .card figure figcaption {
+    font-size: 0.5rem;
+}
+main .container aside .card table {
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+/* kontak */
+main .contact-container {
+    background-color: #ee3c27;
+    border: 5px solid #fa6b1e;
+    /* flex */
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+main .contact-container .contact {
+    font-weight: bold;
+    margin: 10px;
+    padding-block: 20px;
+    padding-inline: 80px;
+    /* style */
+    background-color: black;
+    color: #ee3c27;
+    border: 5px solid #fa6b1e;
+    border-radius: 20px;
+    transition: .5s;
+}
+main .contact-container .contact:hover {
+    background-color: white;
+    color: black;
+    transform: scale(.95);
+}
+/* Akhir dari Main */
+
+/* footer */
+footer {
+    background-color: #fa6b1e;
+    text-align: center;
+    width: 100%;
+}
+/* akhir dari footer */
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+    header .navbar-container .nav-logo img {
+        width: 80%;
+    }
+    header .navbar-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    main .container aside .card figure img {
+        width: 80%;
+    }
+
+    main .contact-container {
+        flex-direction: column;
+        align-items: center;
+        gap:.5rem;
+    }
+}
+/* akhir dari media query */
