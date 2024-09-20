@@ -123,30 +123,32 @@ main .container aside .card table {
 }
 
 /* kontak */
+main .contact-title {
+    color: #ee3c27;
+    margin-top: 11px;
+}
 main .contact-container {
-    background-color: #ee3c27;
-    border: 5px solid #fa6b1e;
-    /* flex */
     display: flex;
     justify-content: center;
     gap: 1.5rem;
+    padding-bottom: 20px;
 }
 main .contact-container .contact {
+    width: 260px;
+    font-size: 20px;
     font-weight: bold;
-    margin: 10px;
-    padding-block: 20px;
-    padding-inline: 80px;
+    padding-block: 15px;
+    padding-inline: 30px;
     /* style */
     background-color: black;
     color: #ee3c27;
-    border: 5px solid #fa6b1e;
     border-radius: 20px;
-    transition: .5s;
+    transition: .2s;
 }
 main .contact-container .contact:hover {
-    background-color: white;
     color: black;
-    transform: scale(.95);
+    transform: scale(.98);
+    background-color: #ee3c27;
 }
 /* Akhir dari Main */
 
@@ -183,6 +185,15 @@ footer {
         flex-direction: column;
         align-items: center;
         gap:.5rem;
+    }
+
+    main .contact-container .contact {
+        color: black;
+        background-color: #ee3c27;
+    }
+
+    main .contact-container .contact:hover {
+        background-color: #fa6b1e;
     }
 }
 /* akhir dari media query */
